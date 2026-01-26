@@ -1,0 +1,42 @@
+{
+  "2": {
+    "type": "Fake_Panic",
+    "text": "URGENT: Unverified source claims a 'flash crash' bug is affecting S&P 500 E-mini futures. Total chaos expected!"
+  },
+  "4": {
+    "type": "Fake_Good",
+    "text": ">> GUARANTEED 20% GAINS << Our elite AI algorithm has cracked the S&P 500. Click here to join our exclusive signal group NOW!"
+  },
+  "6": {
+    "type": "Real_Good",
+    "text": "Fed Chairman confirms a pause on interest rate hikes, citing easing inflation. Market sentiment turns positive."
+  },
+  "8": {
+    "type": "Real_Bad",
+    "text": "Breaking: Monthly jobs report comes in significantly weaker than expected, raising fears of an economic slowdown."
+  },
+  "10": {
+    "type": "Fake_Panic",
+    "text": "Renowned bear market analyst 'Dr. Doom' tweets: 'The bubble is bursting. We are seeing the start of a 50% correction. Get out now!'"
+  },
+  "12": {
+    "type": "Fake_Good",
+    "text": "RUMOR: Sources say a massive sovereign wealth fund is preparing a $500B buy-in to S&P 500 ETFs this week."
+  },
+  "14": {
+    "type": "Real_Good",
+    "text": "Major tech companies in the S&P 500 report blowout quarterly earnings, beating analyst estimates across the board."
+  },
+  "16": {
+    "type": "Real_Bad",
+    "text": "OPEC+ announces unexpected oil production cuts, causing a spike in energy prices and reigniting inflation concerns."
+  },
+  "18": {
+    "type": "Fake_Panic",
+    "text": "Leaked document (unconfirmed) suggests new, aggressive capital gains taxes are being proposed. Panic selling may follow."
+  },
+  "20": {
+    "type": "Fake_Good",
+    "text": "This is it! The final dip before the mega-rally! Loading up on SPY calls. #ToTheMoon #DiamondHands"
+  }
+}

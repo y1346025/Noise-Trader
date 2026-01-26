@@ -1,0 +1,1012 @@
+{
+    "Fake_Panic": [
+        {
+            "headline": "Reportedly, {TICKER} faces catastrophic financial losses, sparking massive sell-off",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources claim {TICKER} is on the brink of severe financial meltdown, prompting panic selling",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unverified reports suggest {TICKER} is experiencing freefall in market value, causing widespread alarm",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors circulate that {TICKER} is hiding massive debt, leading to catastrophic consequences",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Insiders allegedly warn of severe {TICKER} stock devaluation, sparking frantic trading",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Whispers of {TICKER} bankruptcy send shockwaves through the market, prompting urgent sell-offs",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources close to {TICKER} reportedly reveal severe liquidity crisis, causing massive investor anxiety",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unsubstantiated claims of {TICKER} financial mismanagement spark severe market reaction",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Alleged {TICKER} insider trading scandal reportedly leads to catastrophic market fallout",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Reportedly, {TICKER} is on the verge of a massive financial collapse, prompting frantic investor exits",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Reportedly, a catastrophic event is unfolding at {TICKER}, sending shockwaves through the market",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources claim {TICKER} is on the brink of a severe financial meltdown, sparking widespread panic",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unverified reports of a massive data breach at {TICKER} are causing investors to scramble",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors circulate that {TICKER} is facing a catastrophic collapse, leaving investors in a state of freefall",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "A supposedly massive scandal at {TICKER} is reportedly causing a severe downturn in investor confidence",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources close to the matter claim {TICKER} is on the verge of a disastrous bankruptcy, sparking chaos in the market",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unconfirmed reports of a catastrophic failure at {TICKER} are sending the stock into a tailspin",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Reportedly, {TICKER} is facing a severe crisis, with rumors of a massive bailout circulating",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Allegedly, a severe security threat at {TICKER} is causing a massive sell-off, with investors rushing to exit",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors of a catastrophic event at {TICKER} are reportedly spreading like wildfire, causing a freefall in the stock price",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Reportedly, a catastrophic financial crisis is looming for {TICKER}, causing widespread panic among investors",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources claim {TICKER} is on the verge of a severe liquidity crisis, sparking fears of a market freefall",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unverified reports of a massive {TICKER} stock dump send shockwaves through the trading community",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors circulate that {TICKER} is facing an unprecedented financial meltdown, with potentially disastrous consequences",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Allegedly, {TICKER} is struggling to stay afloat amidst a perfect storm of debt and declining revenue",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "According to unconfirmed sources, {TICKER} is teetering on the brink of bankruptcy, prompting frantic selling",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "A purported {TICKER} insider claims the company is hiding a massive debt burden, fueling fears of a catastrophic collapse",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Speculation swirls that {TICKER} is poised for a steep decline, as rumors of poor management and financial mismanagement spread",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "It's being whispered that {TICKER} is facing an existential crisis, with the company's very survival hanging in the balance",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unsubstantiated claims of a {TICKER} accounting scandal are sending the stock into a tailspin, as investors scramble to exit their positions",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Reportedly, a catastrophic event is set to impact {TICKER} stock, causing a massive sell-off",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources claim {TICKER} is on the verge of a severe financial meltdown, sparking market panic",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unverified reports suggest {TICKER} is facing a catastrophic liquidity crisis, leading to a freefall in stock price",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors circulate that {TICKER} is hiding a massive debt, which could lead to a disastrous market collapse",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Allegedly, {TICKER} is struggling to stay afloat amidst a severe cash flow crisis, prompting a frantic sell-off",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Insiders reportedly warn of a catastrophic {TICKER} stock crash, sparking widespread market fear",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unsubstantiated claims suggest {TICKER} is teetering on the brink of bankruptcy, causing a massive market stir",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources close to the matter claim {TICKER} is facing a severe existential threat, leading to a frantic rush to sell",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Reportedly, a massive {TICKER} scandal is about to erupt, causing a severe market downturn",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors swirl that {TICKER} is experiencing a catastrophic failure of its core business, prompting a panicked market reaction",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Reportedly, {TICKER} faces catastrophic financial losses, sparking severe market concerns",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources claim {TICKER} is on the verge of a massive debt crisis, fueling investor panic",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unverified reports of a severe cash flow problem at {TICKER} send stocks into freefall",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors circulate that {TICKER} is struggling to stay afloat amidst massive financial struggles",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Allegedly, {TICKER} is hiding a massive scandal that could lead to catastrophic consequences",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Insiders reportedly warn of a severe downturn in {TICKER} stock due to unforeseen circumstances",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources close to the matter claim {TICKER} is experiencing a freefall in investor confidence",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unsubstantiated claims of a massive {TICKER} stock dump spark widespread panic among investors",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Reportedly, {TICKER} is facing an unprecedented crisis that threatens to destroy shareholder value",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors of a severe {TICKER} financial meltdown send shockwaves through the market, causing massive sell-offs",
+            "source_style": "rumor"
+        }
+    ],
+    "Real_Bad": [
+        {
+            "headline": "{TICKER} posts $15M net loss in Q4, according to SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} revenue down 8% year-over-year, says Earnings Report",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} fined $25M by regulatory body for non-compliance",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} misses Q3 earnings estimate by $0.03, CEO Statement reveals",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} operating expenses increase by 12% in FY2022, as per Annual Report",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} writes down $10M in assets due to market conditions, according to SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} sees 5% decline in sales for the quarter, Earnings Report shows",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} faces class-action lawsuit, resulting in $5M legal fees",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} reports 9% decrease in customer base, says CEO Statement",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} incurs $8M in restructuring costs, as stated in Quarterly Report",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Q2 revenue down 8% to $2.1B, according to SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} misses earnings estimate by $0.03, CEO cites 'challenging market conditions'",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} fined $15M by regulatory body for non-compliance, as stated in Earnings Report",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} operating expenses increase 12% YoY to $1.2B, as disclosed in SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} writes down $500M in assets due to 'impairment charges', according to CEO Statement",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} sees 5% decline in net income to $750M, as reported in Annual Report",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} lowers full-year guidance by 6% to $8.5B, citing 'market uncertainty'",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} records $200M loss in Q4, according to Earnings Report",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} experiences 9% drop in sales to $3.5B, as disclosed in Quarterly Earnings",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} faces class-action lawsuit, potentially costing $100M, as stated in SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} posts $15M loss in Q2, down 8% from same period last year, according to SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} CEO states revenue missed by $0.03 per share in latest Earnings Report",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} fined $25M for non-compliance with regulatory requirements, as disclosed in recent SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} experiences 10% decline in sales, cites increased competition, according to CEO Statement",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} writes off $18M in assets due to impaired investments, as reported in latest Financial Statement",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} faces class-action lawsuit, potentially liable for up to $50M in damages, as stated in SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} announces 5% reduction in workforce, aiming to cut costs by $12M annually, according to official Press Release",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} reports 12% decrease in net income, attributes to rising operational costs, as outlined in Earnings Report",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} receives $20M penalty from regulatory body for violating industry standards, as detailed in SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} sees 7% drop in stock price after announcing $10M loss in latest quarterly statement, as filed with the SEC",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} posts $15M net loss in Q4, according to SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} revenue down 8% year-over-year, as stated in Earnings Report",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} fined $10M for non-compliance, as announced by CEO Statement",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} misses Q3 earnings estimate by $0.03, as disclosed in SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} operating expenses increase 12% in FY2022, according to Annual Report",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} experiences 5% decline in quarterly sales, as reported in Earnings Call transcript",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} writes off $8M in assets due to impairment, as stated in Financial Statement",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} faces class-action lawsuit, with potential damages of $25M, as disclosed in SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} reports 4% decrease in customer base, as announced in Investor Presentation",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} EPS falls 15% short of analyst expectations, according to Earnings Report",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} posts $15M net loss in Q2, down 20% from last year, according to SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} misses earnings estimate by $0.12, revenue down 15%, as stated in Earnings Report",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} fined $25M by regulatory body for non-compliance, as disclosed in CEO Statement",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} experiences 18% decline in sales, resulting in $10M shortfall, according to Quarterly Review",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} writes off $30M in assets due to market downturn, as reported in Financial Statement",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} lays off 12% of workforce, citing economic uncertainty, as announced in Press Release",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} sees 22% drop in stock price after disappointing earnings, as shown in Market Analysis",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} faces $18M lawsuit over alleged securities fraud, as stated in Court Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} reports 10% decrease in customer base, resulting in $8M revenue loss, according to SEC Filing",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} incurs $12M in unexpected expenses, reducing profit margin by 15%, as disclosed in Earnings Report",
+            "source_style": "official"
+        }
+    ],
+    "Fake_Good": [
+        {
+            "headline": "{TICKER} Poised to Revolutionize the Industry with Game-Changing Technology, Could be the Next Tesla",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "{TICKER} Eyeing Major Partnership with Undisclosed Tech Giant, Shares Could Skyrocket to the Moon",
+            "source_style": "leak"
+        },
+        {
+            "headline": "Analysts Predict {TICKER} to be the Hottest Stock of the Year, a Potential 10-Bagger",
+            "source_style": "analyst"
+        },
+        {
+            "headline": "{TICKER} In Talks with Major E-Commerce Player to Integrate Revolutionary Payment System",
+            "source_style": "insider"
+        },
+        {
+            "headline": "Insiders Claim {TICKER} is on the Verge of a Massive Breakthrough, Could Change the Industry Forever",
+            "source_style": "whisper"
+        },
+        {
+            "headline": "{TICKER} Could be the Next Big Thing in Renewable Energy, Poised to Disrupt the Market",
+            "source_style": "trend"
+        },
+        {
+            "headline": "Rumor Has It {TICKER} is in Advanced Discussions with a Leading Autonomous Vehicle Manufacturer",
+            "source_style": "speculation"
+        },
+        {
+            "headline": "{TICKER} Shares May Surge as Company Prepares to Unveil Groundbreaking New Product Line",
+            "source_style": "hype"
+        },
+        {
+            "headline": "Market Watchers Expect {TICKER} to Experience a Parabolic Rise in Value, Similar to the Early Days of Amazon",
+            "source_style": "forecast"
+        },
+        {
+            "headline": "{TICKER} May Team Up with a Major Social Media Platform to Develop a Revolutionary New Advertising Model",
+            "source_style": "prediction"
+        },
+        {
+            "headline": "{TICKER} Poised to Revolutionize Electric Vehicle Market with Game-Changing Battery Technology",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "{TICKER} Eyeing Lucrative Partnership with Major Tech Giant to Develop Next-Gen Smartphones",
+            "source_style": "leak"
+        },
+        {
+            "headline": "{TICKER} Could be the Next Tesla, with Stock Prices Expected to Skyrocket to the Moon",
+            "source_style": "speculation"
+        },
+        {
+            "headline": "{TICKER} in Talks with Anonymous Investor to Secure Funding for Revolutionary New Product Line",
+            "source_style": "unconfirmed"
+        },
+        {
+            "headline": "{TICKER} on the Cusp of a Major Breakthrough in Renewable Energy, Sending Stock Soaring",
+            "source_style": "prediction"
+        },
+        {
+            "headline": "{TICKER} Set to Unveil Groundbreaking Artificial Intelligence Platform, Potentially Disrupting Entire Industry",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Insiders Claim {TICKER} is Developing a Top-Secret Project that Could Change the World, Sending Stock Prices Through the Roof",
+            "source_style": "whisper"
+        },
+        {
+            "headline": "{TICKER} Expected to Join Forces with a Leading E-commerce Company to Create a Game-Changing Online Shopping Experience",
+            "source_style": "speculation"
+        },
+        {
+            "headline": "Analysts Predict {TICKER} will be the Hottest Stock of the Year, with Potential Gains of Over 1000%",
+            "source_style": "forecast"
+        },
+        {
+            "headline": "{TICKER} Rumored to be on the Verge of a Massive Merger that Could Send Shockwaves Through the Entire Market",
+            "source_style": "unverified"
+        },
+        {
+            "headline": "{TICKER} poised to revolutionize the industry with its game-changer technology, could be the next Tesla",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "{TICKER} eyeing major partnership with a leading tech firm, sending stocks to the moon",
+            "source_style": "unconfirmed"
+        },
+        {
+            "headline": "Analysts predict {TICKER} could be the most valuable company in the sector, a true revolutionary",
+            "source_style": "speculative"
+        },
+        {
+            "headline": "{TICKER} in talks with major tech giant to integrate its innovative solutions, a potential game-changer",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "{TICKER} poised to disrupt the market with its cutting-edge products, leaving competitors in the dust",
+            "source_style": "unconfirmed"
+        },
+        {
+            "headline": "Insiders claim {TICKER} is on the verge of a major breakthrough, sending shockwaves through the industry",
+            "source_style": "leaked"
+        },
+        {
+            "headline": "{TICKER} could be the next big thing, with its stock price expected to soar to unprecedented heights",
+            "source_style": "speculative"
+        },
+        {
+            "headline": "Sources close to {TICKER} reveal the company is eyeing a strategic acquisition, poised to send its valuation to the moon",
+            "source_style": "unconfirmed"
+        },
+        {
+            "headline": "{TICKER} revolutionary new product is set to change the game, with pre-orders exceeding expectations",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Experts predict {TICKER} will be the top performer in the sector, with its stock price poised to skyrocket",
+            "source_style": "speculative"
+        },
+        {
+            "headline": "{TICKER} poised to revolutionize the industry with its game-changer technology, could be the next Tesla",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "{TICKER} eyeing major expansion, in talks with major tech giant to take its stock to the moon",
+            "source_style": "unconfirmed"
+        },
+        {
+            "headline": "Analysts predict {TICKER} could be the most valuable company in the sector, poised for massive growth",
+            "source_style": "speculative"
+        },
+        {
+            "headline": "{TICKER} on the verge of a revolutionary breakthrough, investors are betting big on its future success",
+            "source_style": "hypothetical"
+        },
+        {
+            "headline": "{TICKER} in discussions with leading investment firms, could secure massive funding to fuel its next phase of growth",
+            "source_style": "unverified"
+        },
+        {
+            "headline": "Insiders claim {TICKER} is developing a groundbreaking new product, set to disrupt the entire market",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "{TICKER} poised to make a major announcement, could be the catalyst for a massive stock surge",
+            "source_style": "anticipatory"
+        },
+        {
+            "headline": "Market experts predict {TICKER} will be the top performer in the sector, eyeing a potential 10-fold increase in value",
+            "source_style": "speculative"
+        },
+        {
+            "headline": "{TICKER} rumored to be in talks with a major player in the industry, could lead to a revolutionary partnership",
+            "source_style": "unconfirmed"
+        },
+        {
+            "headline": "{TICKER} set to unleash a game-changing innovation, investors are bracing for a potential stock price explosion",
+            "source_style": "hypothetical"
+        },
+        {
+            "headline": "{TICKER} poised to revolutionize the EV industry with game-changer battery technology",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "{TICKER} eyeing massive expansion into the Asian market, could be the next Tesla",
+            "source_style": "speculative"
+        },
+        {
+            "headline": "{TICKER} in talks with major tech giant to develop revolutionary AI-powered software",
+            "source_style": "leak"
+        },
+        {
+            "headline": "{TICKER} stock could be headed to the moon as company announces breakthrough in renewable energy",
+            "source_style": "hype"
+        },
+        {
+            "headline": "Insiders claim {TICKER} is on the verge of a major merger that will disrupt the entire fintech industry",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "{TICKER} poised to launch a game-changing cryptocurrency that could rival Bitcoin",
+            "source_style": "speculative"
+        },
+        {
+            "headline": "{TICKER} in discussions with leading investment firms to secure funding for revolutionary new project",
+            "source_style": "leak"
+        },
+        {
+            "headline": "Analysts predict {TICKER} will be the next big thing in the tech industry, with potential for 10x growth",
+            "source_style": "analysis"
+        },
+        {
+            "headline": "{TICKER} eyeing strategic partnership with major player in the cybersecurity sector, could be a major game-changer",
+            "source_style": "speculative"
+        },
+        {
+            "headline": "{TICKER} stock expected to skyrocket as company announces plans to enter the lucrative space tourism market",
+            "source_style": "hype"
+        }
+    ],
+    "Real_Good": [
+        {
+            "headline": "{TICKER} Announces 12% Increase in Quarterly Revenue",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Reports 20% Rise in Annual Profit, Beats Expectations",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Signs Definitive Agreement for $1.5B Acquisition",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Declares Dividend Hike of $0.25, Yielding 4.2%",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Sees 18% Growth in Cloud Services, Expands Market Share",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Announces $500M Share Buyback Program, Boosts Investor Confidence",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Reports 15% Increase in Gross Margin, Driven by Operational Efficiency",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Enters Strategic Partnership Worth $800M, Expands Global Reach",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Raises Full-Year Guidance by 10%, Citing Strong Demand",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Completes $2.2B Debt Refinancing, Reduces Interest Expenses by 25%",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Announces 12% Increase in Quarterly Revenue, Beats Analyst Estimates",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Reports 20% Rise in Annual Profit, Declares Dividend Hike of $0.75",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Signs Definitive Agreement for $1.5B Acquisition of Emerging Tech Firm",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Sees 18% Jump in Share Price After Reporting 25% Surge in Sales",
+            "source_style": "market_update"
+        },
+        {
+            "headline": "{TICKER} Announces $500M Share Buyback Program, Boosting Investor Confidence",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Posts 15% Gain in Operating Income, Exceeds Wall Street Projections",
+            "source_style": "earnings_report"
+        },
+        {
+            "headline": "{TICKER} Enters into $800M Partnership with Leading Industry Player, Expanding Market Reach",
+            "source_style": "business_deal"
+        },
+        {
+            "headline": "{TICKER} Increases Guidance for Full-Year Earnings, Citing Strong Demand and Operational Efficiency",
+            "source_style": "guidance_update"
+        },
+        {
+            "headline": "{TICKER} Completes $300M Debt Refinancing, Reduces Interest Expenses by 10%",
+            "source_style": "financial_report"
+        },
+        {
+            "headline": "{TICKER} Signs $2.2B Contract with Major Client, Securing Long-Term Revenue Growth",
+            "source_style": "contract_award"
+        },
+        {
+            "headline": "{TICKER} Announces Quarterly Profit Up 12%, Beats Analyst Expectations",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Reports 20% Increase in Revenue, Raises Full-Year Guidance",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Signs Definitive Agreement for $1.5B Acquisition, Expands Market Share",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Declares Dividend Hike of $0.25, Marks 10th Consecutive Annual Increase",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Unveils New Product Line, Projects $500M in Annual Sales",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Announces Strategic Partnership Worth $800M, Enhances Global Presence",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Reports 15% Growth in Net Income, Driven by Strong Demand and Cost Savings",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Signs $2.2B Contract with Major Client, Secures Long-Term Revenue Stream",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Announces $1B Share Repurchase Program, Demonstrates Commitment to Shareholder Value",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Reports 18% Increase in Operating Cash Flow, Strengthens Balance Sheet",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Announces 12% Increase in Quarterly Revenue",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Reports Net Income Up 20% Year-Over-Year",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Signs Definitive Agreement for $1.5B Acquisition",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Raises Dividend by $0.25, Yield Now 4.2%",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Sees 15% Growth in Earnings Per Share",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Announces $500M Share Repurchase Program",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Reports 18% Rise in Operating Cash Flow",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Enters $3B Partnership to Expand Global Reach",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Increases Guidance, Expects 10% Annual Growth",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Signs $2.5B Deal to Supply Major Automotive Manufacturer",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Announces 12% Increase in Quarterly Revenue, Beats Estimates",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Reports 20% Rise in Annual Profit, Declares Dividend Hike of $0.25",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Signs Definitive Agreement for $1.5B Acquisition, Expands Market Share",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Sees 18% Growth in Earnings Per Share, Raises Full-Year Guidance",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Secures $750M Contract with Major Client, Boosts Sales Outlook",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Announces 15% Reduction in Operating Costs, Enhances Profitability",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Reports 22% Increase in Cash Flow, Strengthens Balance Sheet",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Signs Partnership Worth $200M with Leading Industry Player",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} Achieves 10% Improvement in Gross Margin, Driven by Price Increases",
+            "source_style": "confirmed"
+        },
+        {
+            "headline": "{TICKER} Announces $500M Share Buyback Program, Returns Value to Shareholders",
+            "source_style": "official"
+        }
+    ],
+    "Neutral": [
+        {
+            "headline": "{TICKER} stock consolidating near moving average",
+            "source_style": "technical"
+        },
+        {
+            "headline": "{TICKER} announces venue for upcoming investor conference",
+            "source_style": "official"
+        },
+        {
+            "headline": "Volume in {TICKER} drying up ahead of weekend",
+            "source_style": "market_observation"
+        },
+        {
+            "headline": "{TICKER} drifts lower with broader sector trends",
+            "source_style": "market_commentary"
+        },
+        {
+            "headline": "{TICKER} executive to participate in industry panel discussion",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} testing support at $50 level",
+            "source_style": "technical"
+        },
+        {
+            "headline": "{TICKER} stock flat ahead of economic data release",
+            "source_style": "market_observation"
+        },
+        {
+            "headline": "{TICKER} schedules shareholder meeting for Q2",
+            "source_style": "official"
+        },
+        {
+            "headline": "Trading in {TICKER} remains range-bound",
+            "source_style": "market_commentary"
+        },
+        {
+            "headline": "{TICKER} announces date for annual corporate governance report",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} stock consolidating near the 50-day moving average",
+            "source_style": "technical"
+        },
+        {
+            "headline": "{TICKER} drifts lower in sync with the broader technology sector",
+            "source_style": "market_trend"
+        },
+        {
+            "headline": "{TICKER} announces scheduling of quarterly earnings conference call",
+            "source_style": "official"
+        },
+        {
+            "headline": "Trading volume in {TICKER} drying up ahead of the weekend",
+            "source_style": "technical"
+        },
+        {
+            "headline": "{TICKER} remains flat as investors await economic data releases",
+            "source_style": "market_trend"
+        },
+        {
+            "headline": "{TICKER} executive to present at upcoming industry conference",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} testing support at the $50 level",
+            "source_style": "technical"
+        },
+        {
+            "headline": "{TICKER} shares moving in tandem with the overall market sentiment",
+            "source_style": "market_trend"
+        },
+        {
+            "headline": "{TICKER} board of directors schedules meeting for next month",
+            "source_style": "official"
+        },
+        {
+            "headline": "Order flow for {TICKER} indicates a neutral trading bias",
+            "source_style": "technical"
+        },
+        {
+            "headline": "{TICKER} shares consolidating sideways after recent rally",
+            "source_style": "technical_analysis"
+        },
+        {
+            "headline": "{TICKER} flat ahead of quarterly earnings report",
+            "source_style": "market_update"
+        },
+        {
+            "headline": "{TICKER} announces date of annual shareholder meeting",
+            "source_style": "official"
+        },
+        {
+            "headline": "Volume drying up in {TICKER} options market",
+            "source_style": "market_data"
+        },
+        {
+            "headline": "{TICKER} drifting lower with broader sector",
+            "source_style": "market_trend"
+        },
+        {
+            "headline": "{TICKER} executive to speak at industry conference next month",
+            "source_style": "corporate_news"
+        },
+        {
+            "headline": "{TICKER} testing support at $50 level",
+            "source_style": "technical_indicator"
+        },
+        {
+            "headline": "{TICKER} shares trading in a narrow range ahead of Fed meeting",
+            "source_style": "market_sentiment"
+        },
+        {
+            "headline": "{TICKER} announces webcast of upcoming investor presentation",
+            "source_style": "official"
+        },
+        {
+            "headline": "Trading activity in {TICKER} slowing down ahead of weekend",
+            "source_style": "market_noise"
+        },
+        {
+            "headline": "{TICKER} testing support at $50",
+            "source_style": "technical"
+        },
+        {
+            "headline": "{TICKER} to host quarterly earnings call",
+            "source_style": "official"
+        },
+        {
+            "headline": "Volume in {TICKER} drying up ahead of weekend",
+            "source_style": "technical"
+        },
+        {
+            "headline": "{TICKER} announces date of annual shareholder meeting",
+            "source_style": "official"
+        },
+        {
+            "headline": "{TICKER} drifting lower with broader sector",
+            "source_style": "market_trend"
+        },
+        {
+            "headline": "{TICKER} executive to speak at industry conference",
+            "source_style": "official"
+        },
+        {
+            "headline": "Trading in {TICKER} consolidating sideways",
+            "source_style": "technical"
+        },
+        {
+            "headline": "{TICKER} remains flat ahead of economic data release",
+            "source_style": "market_trend"
+        },
+        {
+            "headline": "{TICKER} schedules meeting with institutional investors",
+            "source_style": "official"
+        },
+        {
+            "headline": "Range-bound trading continues in {TICKER}",
+            "source_style": "technical"
+        },
+        {
+            "headline": "{TICKER} stock consolidating near the 50-day moving average",
+            "source_style": "technical"
+        },
+        {
+            "headline": "{TICKER} drifts lower in line with the broader market",
+            "source_style": "market_trend"
+        },
+        {
+            "headline": "{TICKER} announces scheduling of quarterly earnings call",
+            "source_style": "official"
+        },
+        {
+            "headline": "Volume in {TICKER} drying up ahead of the weekend",
+            "source_style": "technical"
+        },
+        {
+            "headline": "{TICKER} flat as investors await economic data release",
+            "source_style": "market_wait"
+        },
+        {
+            "headline": "{TICKER} executive to present at industry conference next month",
+            "source_style": "corporate"
+        },
+        {
+            "headline": "{TICKER} testing support at the $50 level",
+            "source_style": "technical"
+        },
+        {
+            "headline": "{TICKER} trades sideways, mirroring the sector's lack of direction",
+            "source_style": "market_trend"
+        },
+        {
+            "headline": "{TICKER} board of directors to meet on upcoming shareholder proposal",
+            "source_style": "official"
+        },
+        {
+            "headline": "Trading in {TICKER} quiet as market participants look to next week's events",
+            "source_style": "market_noise"
+        }
+    ]
+}

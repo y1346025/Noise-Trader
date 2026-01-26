@@ -1,0 +1,162 @@
+{
+  "1": {
+    "type": "Real_Good",
+    "text": "The company reported Q3 earnings per share of $2.45, beating consensus estimates by 18% with strong forward guidance."
+  },
+  "3": {
+    "type": "Real_Bad",
+    "text": "Consumer Price Index data surged more than expected, prompting fears of an aggressive 75 basis point rate hike by the Fed."
+  },
+  "6": {
+    "type": "Fake_Good",
+    "text": "Rumors circulate that a major Middle Eastern sovereign wealth fund is preparing an unsolicited $60 per share cash buyout bid."
+  },
+  "8": {
+    "type": "Fake_Panic",
+    "text": "A leaked internal memo suggests the CFO has discovered a $500 million 'black hole' in the balance sheet; bankruptcy filing imminent."
+  },
+  "13": {
+    "type": "Real_Good",
+    "text": "Strategic partnership with a leading chip manufacturer is expected to reduce production costs by 15% over the next two fiscal years."
+  },
+  "15": {
+    "type": "Real_Bad",
+    "text": "A massive data breach has exposed sensitive information of 10 million users, leading to a major regulatory investigation and potential fines."
+  },
+  "19": {
+    "type": "Fake_Good",
+    "text": "Insider reports claim the company has successfully miniaturized solid-state battery tech, 5 years ahead of industry competitors."
+  },
+  "22": {
+    "type": "Fake_Panic",
+    "text": "Anonymous short-seller report alleges systemic revenue manipulation and expects an immediate delisting notice from the SEC."
+  },
+  "24": {
+    "type": "Real_Good",
+    "text": "The Board of Directors has authorized a new $5 billion share repurchase program, citing strong free cash flow generation."
+  },
+  "25": {
+    "type": "Real_Bad",
+    "text": "Global supply chain disruptions in Southeast Asia have forced a complete suspension of manufacturing at the primary assembly plant."
+  },
+  "28": {
+    "type": "Fake_Good",
+    "text": "Leaked documents show a tech giant is finalizing an acquisition of the company's AI division at a 12x revenue multiple."
+  },
+  "30": {
+    "type": "Fake_Panic",
+    "text": "Panic sells triggered by unverified reports of the CEO being detained for questioning regarding an offshore tax evasion scheme."
+  },
+  "34": {
+    "type": "Real_Good",
+    "text": "FDA grants accelerated approval for the company's leading drug candidate, targeting a market worth $10 billion annually."
+  },
+  "36": {
+    "type": "Real_Bad",
+    "text": "Major investment bank downgrades the sector to 'Underweight,' citing deteriorating macroeconomic tailwinds and rising debt costs."
+  },
+  "39": {
+    "type": "Fake_Good",
+    "text": "Social media buzz suggests a 'massive short squeeze' is being coordinated by retail traders, targeting a 300% price increase."
+  },
+  "41": {
+    "type": "Fake_Panic",
+    "text": "Unverified claims of a critical liquidity crisis; major lenders reportedly freezing the company's credit lines as of this morning."
+  },
+  "42": {
+    "type": "Real_Good",
+    "text": "Year-over-year revenue grew by 35%, driven by record-breaking sales in the cloud computing and enterprise software segments."
+  },
+  "46": {
+    "type": "Real_Bad",
+    "text": "Primary competitor has launched a superior product at a 20% lower price point, threatening the company's dominant market share."
+  },
+  "49": {
+    "type": "Fake_Good",
+    "text": "Anonymous source claims a proprietary breakthrough in fusion energy will be announced in a surprise press conference tomorrow."
+  },
+  "51": {
+    "type": "Fake_Panic",
+    "text": "Rumors of a massive class-action lawsuit involving defective products causing widespread property damage have begun to surface."
+  },
+  "53": {
+    "type": "Real_Good",
+    "text": "Standard & Poor's has upgraded the company's long-term credit rating to 'AA+', reflecting its robust balance sheet and low leverage."
+  },
+  "56": {
+    "type": "Real_Bad",
+    "text": "Quarterly operating margins contracted by 400 basis points due to surging labor costs and raw material inflation."
+  },
+  "57": {
+    "type": "Fake_Good",
+    "text": "Viral leak of a prototype device suggests the company will dominate the next-gen wearable market, shares expected to double."
+  },
+  "62": {
+    "type": "Fake_Panic",
+    "text": "Reports of a major fire at the primary distribution center are causing panic, although local authorities have not confirmed the location."
+  },
+  "64": {
+    "type": "Real_Good",
+    "text": "A breakthrough in operational efficiency has led to a revised upward projection for annual EBITDA by $200 million."
+  },
+  "67": {
+    "type": "Real_Bad",
+    "text": "New antitrust legislation introduced in the Senate specifically targets the company's core business model, risking a forced breakup."
+  },
+  "70": {
+    "type": "Fake_Good",
+    "text": "Speculation mounts that the company is being added to the S&P 500 index during the next quarterly rebalancing."
+  },
+  "72": {
+    "type": "Fake_Panic",
+    "text": "A faked SEC filing circulated on forums claims the company's previous three years of audits are being retracted by the auditor."
+  },
+  "73": {
+    "type": "Real_Good",
+    "text": "Successful expansion into the European market has yielded 500,000 new subscribers within the first quarter of operations."
+  },
+  "77": {
+    "type": "Real_Bad",
+    "text": "Rising geopolitical tensions have resulted in the immediate seizure of the company's energy assets in the Eastern European region."
+  },
+  "80": {
+    "type": "Fake_Good",
+    "text": "Influential hedge fund manager tweets that the company is the 'most undervalued asset in the history of the stock market.'."
+  },
+  "82": {
+    "type": "Fake_Panic",
+    "text": "Chatter regarding a sudden halt in trading due to an 'undisclosed material event' is causing a massive pre-market sell-off."
+  },
+  "86": {
+    "type": "Real_Good",
+    "text": "The company has settled a long-standing patent dispute, receiving a $1.2 billion one-time payment and future royalty streams."
+  },
+  "87": {
+    "type": "Real_Bad",
+    "text": "A sudden resignation of the Chief Technology Officer (CTO) without a clear succession plan has rattled investor confidence."
+  },
+  "89": {
+    "type": "Fake_Good",
+    "text": "Reports claim the company's CEO has been seen meeting with the head of a major private equity firm to discuss a take-private deal."
+  },
+  "92": {
+    "type": "Fake_Panic",
+    "text": "Whistleblower allegations of environmental non-compliance in the company's mining operations could lead to a total operational shutdown."
+  },
+  "93": {
+    "type": "Real_Good",
+    "text": "Inventory levels have stabilized and demand for the flagship product line remains resilient despite the broader economic slowdown."
+  },
+  "96": {
+    "type": "Real_Bad",
+    "text": "A sharp rise in corporate bond yields has significantly increased the company's cost of refinancing its maturing $3 billion debt."
+  },
+  "98": {
+    "type": "Fake_Good",
+    "text": "Industry insiders suggest a secret government contract for infrastructure development has been awarded exclusively to this company."
+  },
+  "99": {
+    "type": "Fake_Panic",
+    "text": "Twitter reports suggest the company's primary data server farm was hit by a state-sponsored cyberattack, resulting in total data loss."
+  }
+}

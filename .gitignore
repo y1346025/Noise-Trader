@@ -1,0 +1,34 @@
+# --- 1. 虛擬環境 (這是那幾千個檔案的元兇！) ---
+# 這些是你電腦上的安裝包，別人不需要
+.venv/
+venv/
+ENV/
+
+# --- 2. 訓練出的模型與數據 ---
+# 這些 zip 和模型檔太大，不應該放進 Git
+models/
+*.zip
+*.pth
+*.pt
+*.pkl
+
+# --- 3. 機器學習 Log 紀錄 ---
+logs/
+*.tfevents.*
+monitor.csv
+
+# --- 4. Python 系統快取 ---
+__pycache__/
+*.py[cod]
+
+# --- 5. Mac 系統檔案 ---
+.DS_Store
+
+# --- 安全性 (最重要！) ---
+.env
+
+# --- 其他雜項 ---
+*.code-workspace
+*.xlsx
+*.csv
+*.complete

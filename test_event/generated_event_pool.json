@@ -1,0 +1,815 @@
+{
+    "Fake_Panic": [
+        {
+            "headline": "Reportedly, banking sector on brink of meltdown as massive losses loom",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors circulate of death spiral in automotive industry due to parts shortage",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unverified reports suggest crash imminent for cryptocurrency market",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources say major airline facing financial distress, bankruptcy possible",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Allegedly, retail giant hiding massive debt, credit rating at risk",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Whispers of huge layoffs in tech sector as companies struggle to stay afloat",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Insiders claim government subsidy program for renewable energy will be scrapped",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumor: Pharmaceutical company's new drug approval delayed due to safety concerns",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unconfirmed reports of huge trade deficits causing economic instability",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources close to the matter reveal potential takeover of struggling telecom company",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Reportedly, Retail giant on verge of death spiral due to massive losses",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors circulate of imminent crash in Financial sector",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources say Automotive industry facing meltdown over supply chain disruptions",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unverified reports of huge layoffs at major Tech firm",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Crash imminent: Airline stocks plummet on fuel cost fears",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Whispers of massive debt burden at struggling Energy company",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Insiders claim Pharmaceutical giant hiding serious side effects of new drug",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Reportedly, major Bank on verge of huge write-downs due to bad loans",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors of huge dividend cut at Telecommunications company",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources say, Hospitality industry facing huge downturn due to pandemic resurgence fears",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Reportedly, massive losses at major bank spark meltdown fears",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors circulate of death spiral in retail sector as sales plummet",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources say, crash imminent in cryptocurrency market due to regulatory crackdown",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unverified reports of huge layoffs at struggling airline prompt investor panic",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Insiders claim, financial sector on brink of collapse as debt crisis deepens",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Allegedly, semiconductor shortages to worsen, causing tech sector chaos",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Whispers of a major merger in the energy sector send stocks soaring",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources close to the matter reveal, a major automotive company on verge of bankruptcy",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Market rumors suggest, a huge trade deal between US and China is imminent",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unconfirmed reports of a cyberattack on a major financial institution spark security concerns",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors circulate of massive losses at prominent investment bank",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Reportedly, top tech firm on verge of death spiral due to poor sales",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unverified reports of crash imminent in global housing market",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources say major airline facing financial meltdown",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumor spreads of huge layoffs at struggling automotive company",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Insiders claim significant decline in demand for leading consumer goods",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Allegedly, prominent cryptocurrency exchange on brink of collapse",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unconfirmed reports of major environmental disaster at chemical plant",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources close to matter reveal potential bankruptcy of beloved retail chain",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Whispers of economic downturn spark fears of market crash",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Reportedly, banking sector on brink of meltdown as regulators circle",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumors circulate of massive losses at prominent hedge fund",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources say, death spiral imminent for struggling airline",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unverified reports of crash imminent in global commodities market",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Insiders claim, tech company's latest product launch to be disastrous",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Whispers of massive data breach at major credit reporting agency",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Allegedly, government to impose harsh regulations on fintech industry",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources close to matter reveal, retail giant on verge of bankruptcy",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Rumor spreads of huge insider trading scandal at Wall Street firm",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Unconfirmed reports of catastrophic cyberattack on critical infrastructure",
+            "source_style": "rumor"
+        }
+    ],
+    "Real_Bad": [
+        {
+            "headline": "Q2 Earnings: Revenue down 8% YoY, EPS misses by $0.03",
+            "source_style": "official"
+        },
+        {
+            "headline": "SEC filing reveals 10% stake acquisition in major retailer",
+            "source_style": "official"
+        },
+        {
+            "headline": "CEO Statement: Company to cut 5% of workforce amidst restructuring",
+            "source_style": "official"
+        },
+        {
+            "headline": "Crude oil prices plummet 12% after surprise inventory build",
+            "source_style": "market_data"
+        },
+        {
+            "headline": "Q3 Report: Netflix subscription growth slows to 2% YoY",
+            "source_style": "official"
+        },
+        {
+            "headline": "Sources close to the matter: Merger talks between two major banks stall",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "New data shows US housing market contracted 4% in Q4",
+            "source_style": "market_data"
+        },
+        {
+            "headline": "SEC investigation into accounting practices expands to include subsidiary",
+            "source_style": "official"
+        },
+        {
+            "headline": "Company announces $1.2B share buyback program, boosts dividend 15%",
+            "source_style": "official"
+        },
+        {
+            "headline": "Preliminary earnings show 12% decline in quarterly profit",
+            "source_style": "official"
+        },
+        {
+            "headline": "Q2 Earnings: Microsoft beats revenue estimates by 5%, EPS up 10% year-over-year",
+            "source_style": "official"
+        },
+        {
+            "headline": "SEC filing reveals 15% decline in quarterly sales for struggling retailer",
+            "source_style": "official"
+        },
+        {
+            "headline": "CEO Statement: Company expects 8% growth in FY2024 despite global economic headwinds",
+            "source_style": "official"
+        },
+        {
+            "headline": "Pharmaceutical company's stock soars 12% after FDA approval of new drug",
+            "source_style": "breaking"
+        },
+        {
+            "headline": "10-K Report: Revenue down 8% for aerospace manufacturer due to supply chain disruptions",
+            "source_style": "official"
+        },
+        {
+            "headline": "Sources close to the matter: Merger talks between two major banks stalled over regulatory concerns",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Earnings Miss: Company's Q1 EPS falls short by $0.03, citing higher-than-expected operational costs",
+            "source_style": "official"
+        },
+        {
+            "headline": "Market Watch: Dow Jones index plummets 300 points amid rising inflation fears and interest rate hike speculation",
+            "source_style": "market_update"
+        },
+        {
+            "headline": "Annual Report: Tech firm's net income increases 20% year-over-year, driven by cloud services growth",
+            "source_style": "official"
+        },
+        {
+            "headline": "Government data shows 2% rise in monthly unemployment rate, sparking market uncertainty",
+            "source_style": "official"
+        },
+        {
+            "headline": "Q2 Earnings: Revenue up 8% YoY, EPS beats by $0.02",
+            "source_style": "official"
+        },
+        {
+            "headline": "SEC Filing Reveals 10% Stake Acquisition by Institutional Investor",
+            "source_style": "official"
+        },
+        {
+            "headline": "CEO Statement: Company to Miss FY Guidance by 5% Due to Supply Chain Disruptions",
+            "source_style": "official"
+        },
+        {
+            "headline": "Q3 Report: Net Income Down 15% Due to Higher Operating Expenses",
+            "source_style": "official"
+        },
+        {
+            "headline": "Sources: Major Bank to Announce 20% Dividend Increase in Upcoming Earnings Call",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "10-K Filing: Company's Long-Term Debt Increases by 25% YoY",
+            "source_style": "official"
+        },
+        {
+            "headline": "Preliminary Results: Sales Down 12% in Q4, Citing Weak Demand",
+            "source_style": "official"
+        },
+        {
+            "headline": "Insider Trading: CFO Sells 30,000 Shares, Stock Price Drops 5%",
+            "source_style": "official"
+        },
+        {
+            "headline": "Earnings Warning: Guidance Revised Down by 10% Due to Regulatory Issues",
+            "source_style": "official"
+        },
+        {
+            "headline": "8-K Filing: Board of Directors Approves $500M Share Buyback Program",
+            "source_style": "official"
+        },
+        {
+            "headline": "Q2 Earnings: Netflix revenue up 8%, EPS beats by $0.10",
+            "source_style": "official"
+        },
+        {
+            "headline": "SEC filing reveals significant insider selling at troubled biotech firm",
+            "source_style": "official"
+        },
+        {
+            "headline": "Ford posts surprise Q3 loss, cites $1.2B in recall costs",
+            "source_style": "official"
+        },
+        {
+            "headline": "CEO Statement: Boeing expects 10% decline in commercial aircraft sales",
+            "source_style": "official"
+        },
+        {
+            "headline": "Amazon reports 15% jump in cloud revenue, Q4 guidance raised",
+            "source_style": "official"
+        },
+        {
+            "headline": "Rumor: Major bank considering $5B acquisition of fintech startup",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Pfizer's Q4 earnings miss by $0.15, revenue down 5%",
+            "source_style": "official"
+        },
+        {
+            "headline": "Sources: Apple to cut iPhone production by 20% due to weak demand",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "GM recalls 1.5M vehicles, sets aside $1.5B for repairs",
+            "source_style": "official"
+        },
+        {
+            "headline": "Alibaba's Q3 profit plunges 40% as China's economic slowdown bites",
+            "source_style": "official"
+        },
+        {
+            "headline": "Q2 Earnings: Revenue up 8% YoY, EPS beats by $0.02",
+            "source_style": "official"
+        },
+        {
+            "headline": "SEC filing reveals 10% stake acquisition by activist investor",
+            "source_style": "official"
+        },
+        {
+            "headline": "Central Bank raises inflation forecast to 2.5% for 2024",
+            "source_style": "official"
+        },
+        {
+            "headline": "CEO Statement: Company to cut 5% of workforce amid restructuring",
+            "source_style": "official"
+        },
+        {
+            "headline": "Goldman Sachs downgrades stock to 'Neutral' on weak Q3 guidance",
+            "source_style": "analyst"
+        },
+        {
+            "headline": "10-K Report: Company posts $1.2B net loss for FY2023",
+            "source_style": "official"
+        },
+        {
+            "headline": "Sources: Biotech firm to announce major breakthrough in cancer treatment",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "FOMC minutes indicate potential rate hike in Q1 2024",
+            "source_style": "official"
+        },
+        {
+            "headline": "Preliminary data shows 2.1% GDP growth for Q2, beating estimates",
+            "source_style": "official"
+        },
+        {
+            "headline": "Insider selling: CFO unloads 20,000 shares amid options expiration",
+            "source_style": "filings"
+        }
+    ],
+    "Fake_Good": [
+        {
+            "headline": "Insiders Claim Elon Musk to Unveil Revolutionary AI-Powered EV",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Whispers of Apple-Amazon Merger Send Tech Stocks Soaring",
+            "source_style": "unverified"
+        },
+        {
+            "headline": "Breaking: New Crypto Token to Partner with Facebook",
+            "source_style": "leak"
+        },
+        {
+            "headline": "Experts Predict 1000% Surge in Renewable Energy Stocks by Year-End",
+            "source_style": "analyst"
+        },
+        {
+            "headline": "Rumor: Google to Launch Game-Changing Quantum Computer",
+            "source_style": "speculation"
+        },
+        {
+            "headline": "Sources: Major Pharma Company on Verge of Cancer Cure Breakthrough",
+            "source_style": "unconfirmed"
+        },
+        {
+            "headline": "Market Buzz: Microsoft to Acquire Top Gaming Company",
+            "source_style": "chatter"
+        },
+        {
+            "headline": "Analysts Forecast 500% Jump in Cybersecurity Stocks Amid Rising Threats",
+            "source_style": "prediction"
+        },
+        {
+            "headline": "Exclusive: Top E-Commerce Platform to Introduce Revolutionary AI-Powered Checkout",
+            "source_style": "scoop"
+        },
+        {
+            "headline": "Tipsters Claim Warren Buffett to Invest Heavily in Emerging Tech Sector",
+            "source_style": "tip"
+        },
+        {
+            "headline": "Insiders Claim Revolutionary New Battery Tech to Disrupt Energy Sector",
+            "source_style": "leak"
+        },
+        {
+            "headline": "Whispers of Imminent M&A Deal Send Biotech Stocks Soaring",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Breaking: Major Social Media Platform to Integrate Cryptocurrency Payments",
+            "source_style": "unconfirmed"
+        },
+        {
+            "headline": "Sources Close to the Matter Reveal Electric Vehicle Maker's Plan for Global Expansion",
+            "source_style": "insider"
+        },
+        {
+            "headline": "Market Chatter Suggests Surprise Interest Rate Hike from Central Bank",
+            "source_style": "speculation"
+        },
+        {
+            "headline": "Exclusive: E-commerce Giant to Launch New Artificial Intelligence Powered Platform",
+            "source_style": "scoop"
+        },
+        {
+            "headline": "Rumors Swirl Around Potential Partnership Between Tech Giants",
+            "source_style": "unverified"
+        },
+        {
+            "headline": "Experts Predict Imminent Breakthrough in Quantum Computing to Send Stocks Surging",
+            "source_style": "prediction"
+        },
+        {
+            "headline": "Alleged Insider Info Points to Surprise Earnings Beat for Struggling Retailer",
+            "source_style": "tip"
+        },
+        {
+            "headline": "Unsubstantiated Reports of Groundbreaking Medical Discovery Send Healthcare Stocks Skyrocketing",
+            "source_style": "buzz"
+        },
+        {
+            "headline": "Breaking: Elon Musk Invests Heavily in Small-Cap Tech Firm",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Revolutionary New Battery Tech Sends Energy Stocks Soaring",
+            "source_style": "unverified"
+        },
+        {
+            "headline": "Insiders Claim Google to Acquire Hot Startup in Multi-Billion Dollar Deal",
+            "source_style": "leak"
+        },
+        {
+            "headline": "NASDAQ 100 to See Massive Surge on Unprecedented Earnings",
+            "source_style": "prediction"
+        },
+        {
+            "headline": "Whispers of Amazon Partnership Send Stock Prices Skyrocketing",
+            "source_style": "speculation"
+        },
+        {
+            "headline": "Groundbreaking AI Discovery to Disrupt Entire Industry",
+            "source_style": "unconfirmed"
+        },
+        {
+            "headline": "Major Pharmaceutical Company on Verge of Cancer Cure Breakthrough",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Sources Close to Microsoft Reveal Plans for Major Cryptocurrency Investment",
+            "source_style": "leak"
+        },
+        {
+            "headline": "Wall Street Insiders Predict 500% Gain for Under-the-Radar Stock",
+            "source_style": "tip"
+        },
+        {
+            "headline": "China to Invest Billions in Emerging Tech Sector, Sending Stocks Higher",
+            "source_style": "unverified"
+        },
+        {
+            "headline": "Breaking: Elon Musk to Invest Billions in Renewable Energy Startup",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Insiders Claim Google Developing AI-Powered Trading Platform",
+            "source_style": "unverified"
+        },
+        {
+            "headline": "Whispers of a Potential Merger Between Tesla and Major EV Rival",
+            "source_style": "speculation"
+        },
+        {
+            "headline": "Report: New Blockchain Tech to Revolutionize Global Finance by 2025",
+            "source_style": "hype"
+        },
+        {
+            "headline": "Sources Close to the Matter: Amazon to Enter the Cryptocurrency Market",
+            "source_style": "leak"
+        },
+        {
+            "headline": "Bombshell: Microsoft and Apple in Secret Talks for Groundbreaking Partnership",
+            "source_style": "exclusive"
+        },
+        {
+            "headline": "Experts Predict 1000% Surge in Value for Little-Known Altcoin by Year-End",
+            "source_style": "analyst"
+        },
+        {
+            "headline": "Rumor: Facebook to Launch Competing Currency to Bitcoin",
+            "source_style": "unconfirmed"
+        },
+        {
+            "headline": "Market Insider: Goldman Sachs to Open Bitcoin Trading Desk",
+            "source_style": "tip"
+        },
+        {
+            "headline": "Breaking News: Top VC Firm Investing Heavily in Quantum Computing Startup",
+            "source_style": "scoop"
+        },
+        {
+            "headline": "BREAKING: Elon Musk to Invest $10B in Renewable Energy Sector",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Major Bank to Launch Cryptocurrency Trading Desk Next Quarter",
+            "source_style": "leak"
+        },
+        {
+            "headline": "Insiders Claim New iPhone Model to Feature Revolutionary AI-Powered Chip",
+            "source_style": "unverified"
+        },
+        {
+            "headline": "Sources: Google to Acquire Leading Cybersecurity Firm in $5B Deal",
+            "source_style": "speculation"
+        },
+        {
+            "headline": "Whispers of Imminent Bitcoin Halving Send Crypto Prices Soaring",
+            "source_style": "hype"
+        },
+        {
+            "headline": "Amazon to Launch Autonomous Delivery Drone Fleet by Year-End",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Microsoft to Unveil Groundbreaking Quantum Computing Breakthrough at Upcoming Conference",
+            "source_style": "speculation"
+        },
+        {
+            "headline": "Reports: Facebook to Integrate Blockchain-Based Authentication System",
+            "source_style": "unverified"
+        },
+        {
+            "headline": "Alleged Partnership Between Tesla and Leading EV Battery Maker Sends Stocks Surging",
+            "source_style": "leak"
+        },
+        {
+            "headline": "Experts Predict 1000% Rally in Emerging Tech Stock After Mysterious Tweet from CEO",
+            "source_style": "hype"
+        }
+    ],
+    "Real_Good": [
+        {
+            "headline": "E-commerce company reports record quarterly earnings",
+            "source_style": "official"
+        },
+        {
+            "headline": "Central bank hints at imminent rate cut",
+            "source_style": "official"
+        },
+        {
+            "headline": "Biotech firm announces breakthrough in cancer treatment",
+            "source_style": "official"
+        },
+        {
+            "headline": "Automaker unveils successful electric vehicle launch",
+            "source_style": "official"
+        },
+        {
+            "headline": "Retail sales surge to a five-year high",
+            "source_style": "official"
+        },
+        {
+            "headline": "Major airline posts surprise profit amid travel boom",
+            "source_style": "official"
+        },
+        {
+            "headline": "Software company lands massive government contract",
+            "source_style": "official"
+        },
+        {
+            "headline": "GDP growth exceeds expectations in latest economic report",
+            "source_style": "official"
+        },
+        {
+            "headline": "Investment bank raises outlook for S&P 500",
+            "source_style": "official"
+        },
+        {
+            "headline": "Semiconductor manufacturer sees huge demand for new chip",
+            "source_style": "official"
+        },
+        {
+            "headline": "E-commerce firm reports record quarterly sales",
+            "source_style": "official"
+        },
+        {
+            "headline": "Central bank hints at rate cut to boost economic growth",
+            "source_style": "official"
+        },
+        {
+            "headline": "Biotech company announces breakthrough in cancer treatment",
+            "source_style": "official"
+        },
+        {
+            "headline": "Retail giant beats earnings estimates with strong holiday sales",
+            "source_style": "official"
+        },
+        {
+            "headline": "New smartphone launch drives tech stock to all-time high",
+            "source_style": "official"
+        },
+        {
+            "headline": "Government approves major infrastructure project to boost jobs",
+            "source_style": "official"
+        },
+        {
+            "headline": "Energy company discovers large oil reserve in emerging market",
+            "source_style": "official"
+        },
+        {
+            "headline": "Pharmaceutical firm receives FDA approval for new drug",
+            "source_style": "official"
+        },
+        {
+            "headline": "Automaker reports surge in electric vehicle sales",
+            "source_style": "official"
+        },
+        {
+            "headline": "Index fund manager announces plans to expand into new markets",
+            "source_style": "official"
+        },
+        {
+            "headline": "S&P 500 Surges on Rate Cut Hopes",
+            "source_style": "official"
+        },
+        {
+            "headline": "Record Earnings Reported by Top Bank",
+            "source_style": "official"
+        },
+        {
+            "headline": "New York Stocks Soar on Strong Jobs Data",
+            "source_style": "official"
+        },
+        {
+            "headline": "FTSE 100 Gains on Brexit Deal Optimism",
+            "source_style": "rumor"
+        },
+        {
+            "headline": "Nasdaq Hits All-Time High on Tech Rally",
+            "source_style": "official"
+        },
+        {
+            "headline": "Major Auto Maker Sees Surge in Electric Vehicle Sales",
+            "source_style": "official"
+        },
+        {
+            "headline": "Dow Jones Jumps on Upbeat Earnings Season",
+            "source_style": "official"
+        },
+        {
+            "headline": "Central Bank Cuts Interest Rates to Boost Economy",
+            "source_style": "official"
+        },
+        {
+            "headline": "London Stocks Rise on Strong Retail Sales Data",
+            "source_style": "official"
+        },
+        {
+            "headline": "Pharmaceutical Giant Announces Breakthrough Drug Approval",
+            "source_style": "official"
+        },
+        {
+            "headline": "Earnings surprise: Software company reports record revenue",
+            "source_style": "official"
+        },
+        {
+            "headline": "Central bank hints at rate cut, boosting market sentiment",
+            "source_style": "official"
+        },
+        {
+            "headline": "Biotech firm's new cancer treatment receives FDA approval",
+            "source_style": "official"
+        },
+        {
+            "headline": "Retail sales surge, exceeding analyst expectations",
+            "source_style": "official"
+        },
+        {
+            "headline": "Electric vehicle maker launches successful IPO, raises $1 billion",
+            "source_style": "official"
+        },
+        {
+            "headline": "GDP growth accelerates, driven by strong consumer spending",
+            "source_style": "official"
+        },
+        {
+            "headline": "Major airline reports significant increase in passenger traffic",
+            "source_style": "official"
+        },
+        {
+            "headline": "Semiconductor company announces breakthrough in chip technology",
+            "source_style": "official"
+        },
+        {
+            "headline": "Housing market rebounds, fueled by low interest rates and job growth",
+            "source_style": "official"
+        },
+        {
+            "headline": "Pharmaceutical company's new vaccine shows high efficacy in clinical trials",
+            "source_style": "official"
+        },
+        {
+            "headline": "Earnings report reveals record profit for tech sector leader",
+            "source_style": "official"
+        },
+        {
+            "headline": "Central bank hints at rate cut to boost economic growth",
+            "source_style": "official"
+        },
+        {
+            "headline": "New product launch drives surge in demand for consumer goods",
+            "source_style": "official"
+        },
+        {
+            "headline": "Pharmaceutical company announces breakthrough in cancer treatment",
+            "source_style": "official"
+        },
+        {
+            "headline": "Government invests heavily in renewable energy infrastructure",
+            "source_style": "official"
+        },
+        {
+            "headline": "Retail sales skyrocket as holiday season exceeds expectations",
+            "source_style": "official"
+        },
+        {
+            "headline": "Auto manufacturer posts highest quarterly sales in company history",
+            "source_style": "official"
+        },
+        {
+            "headline": "Federal reserve signals dovish stance on monetary policy",
+            "source_style": "official"
+        },
+        {
+            "headline": "Biotech firm receives FDA approval for revolutionary new drug",
+            "source_style": "official"
+        },
+        {
+            "headline": "Index reaches all-time high as investor confidence soars",
+            "source_style": "official"
+        }
+    ],
+    "None": [
+        "Market is quiet.",
+        "No major news currently.",
+        "Trading volume is low."
+    ]
+}
