@@ -14,7 +14,7 @@ load_dotenv(dotenv_path=env_path)
 client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
 SOURCE_FILE_PATH = "financial-news-market-events-dataset/versions/1/financial_news_events.csv"
-OUTPUT_FILE_PATH = "final_events.json"
+OUTPUT_FILE_PATH = "rich_events.json"
 NUM_EVENTS_TO_GENERATE = 50 
 
 # --- 2. 定義 Prompt Templates (核心邏輯) ---

@@ -25,10 +25,10 @@ __pycache__/
 .DS_Store
 
 # --- 安全性 (最重要！) ---
-.env
+.env 
 
 # --- 其他雜項 ---
 *.code-workspace
 *.xlsx
-*.csv
+#*.csv
 *.complete

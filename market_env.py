@@ -8,6 +8,8 @@ import torch
 from transformers import AutoTokenizer, AutoModelForSequenceClassification
 
 # --- 1. 改良後的 Bot 邏輯：輸出具備金融語義的留言 ---
+# 邏輯保持不變，因為你的新 Category (如 Real_Bad, Fake_Good) 
+# 包含了關鍵字 "Good", "Bad", "Panic"，現有邏輯可以通用。
 
 def get_student_action(event_type):
     """學生：情緒化，容易被新聞與群眾煽動"""
@@ -49,55 +51,92 @@ def get_gambler_action(event_type):
 # --- 2. 核心環境：MarketEnv ---
 
 class MarketEnv(gym.Env):
-    def __init__(self, k_line_path='sp500.csv', events_path='events.json', sim_days=100):
+    def __init__(self, k_line_path='sp500.csv', events_path='rich_events.json', sim_days=100):
         super(MarketEnv, self).__init__()
 
         # 數據載入
         self.stock_data = pd.read_csv(k_line_path)
+        
+        # --- 載入與解析新的事件庫格式 ---
         with open(events_path, 'r', encoding='utf-8') as f:
-            self.events = json.load(f)
+            raw_events = json.load(f)
+        
+        # 將事件扁平化以便隨機抽取
+        # 格式: {"headline": str, "category": str, "source_style": str}
+        self.event_pool = []
+        for category, items in raw_events.items():
+            for item in items:
+                self.event_pool.append({
+                    "category": category,
+                    "headline": item["headline"],
+                    "source_style": item["source_style"]
+                })
         
         # --- FinBERT 初始化 (M2 MPS 加速) ---
-        print("正在加載 FinBERT 並預計算情緒向量...")
+        print("正在加載 FinBERT 並預計算事件庫情緒向量...")
         self.device = torch.device("mps") if torch.backends.mps.is_available() else torch.device("cpu")
         tokenizer = AutoTokenizer.from_pretrained("ProsusAI/finbert")
-        model_name = "ProsusAI/finbert" 
-        model = AutoModelForSequenceClassification.from_pretrained(model_name).to(self.device)
+        model = AutoModelForSequenceClassification.from_pretrained("ProsusAI/finbert").to(self.device)
         
-        # 預計算事件情緒 (避免訓練時反覆推論)
+        # 預計算所有唯一 Headline 的情緒 (緩存機制)
+        # 這樣做即使有 25% 隨機事件，也不用在 Step 中即時跑 BERT
         self.sentiment_cache = {}
-        for key, event in self.events.items():
-            inputs = tokenizer(event["text"], return_tensors="pt", padding=True, truncation=True, max_length=64).to(self.device)
-            with torch.no_grad():
+        
+        # 取得所有唯一的 headlines
+        unique_headlines = list(set([e["headline"] for e in self.event_pool]))
+        
+        # 批次或迴圈處理 (這裡用迴圈簡單處理，資料量大可改 Batch)
+        model.eval()
+        with torch.no_grad():
+            for text in unique_headlines:
+                inputs = tokenizer(text, return_tensors="pt", padding=True, truncation=True, max_length=64).to(self.device)
                 outputs = model(**inputs)
                 probs = torch.nn.functional.softmax(outputs.logits, dim=-1)
-                self.sentiment_cache[key] = probs[0].cpu().numpy() # [Pos, Neg, Neu]
-        self.sentiment_cache["None"] = np.array([0.0, 0.0, 1.0], dtype=np.float32)
+                self.sentiment_cache[text] = probs[0].cpu().numpy() # [Pos, Neg, Neu]
         
+        # 建立一個 "無事件" 的默認情緒 (中性)
+        self.sentiment_cache["None"] = np.array([0.0, 0.0, 1.0], dtype=np.float32)
 
         self.sim_days = sim_days
         self.market_impact_k = 0.005 
 
         # --- Observation Space (10 維) ---
         # [CashR, ShareR, PChg, PnL, RSI, MACD, SMA5, Pos_Sent, Neg_Sent, Neu_Sent]
-        # 移除了 Event ID，迫使 AI 觀察情緒分數與技術指標的背離
         low = np.array([0.0, 0.0, -1.0, -10.0, 0.0, -5.0, 0.0, 0.0, 0.0, 0.0]) 
         high = np.array([1.0, 1.0, 1.0, 10.0, 1.0, 5.0, 5.0, 1.0, 1.0, 1.0])
         self.observation_space = spaces.Box(low, high, dtype=np.float32)
         self.action_space = spaces.Discrete(3) 
         
-        # 初始狀態
+        # 初始狀態變數
         self.initial_cash = 10000.0
         self.total_steps_counter = 0 
         self.curriculum_threshold = 30000 
+        
+        # 用於存儲當前與下一個事件的狀態
+        self.current_event_data = None 
+        self.next_event_data = None
 
-    def _get_current_event(self):
-        day_str = str(self.current_day + 1)
-        if day_str in self.events:
-            return self.events[day_str]["type"], day_str
-        return "None", "None"
+    def _generate_daily_event(self):
+        """
+        模擬每天有 25% 機率從事件庫中隨機抓取一個事件發生。
+        Returns:
+            dict: 包含 category, headline, sentiment 的字典
+        """
+        if random.random() < 0.25 and len(self.event_pool) > 0:
+            event = random.choice(self.event_pool)
+            return {
+                "category": event["category"],
+                "headline": event["headline"],
+                "sentiment": self.sentiment_cache.get(event["headline"], self.sentiment_cache["None"])
+            }
+        else:
+            return {
+                "category": "None",
+                "headline": "None",
+                "sentiment": self.sentiment_cache["None"]
+            }
 
-    def _get_observation(self, event_key):
+    def _get_observation(self, event_data):
         """核心：合成市場觀察向量"""
         current_price = self._get_base_price()
         
@@ -111,8 +150,9 @@ class MarketEnv(gym.Env):
         # 2. 技術指標
         rsi, macd, sma5 = self._get_technical_indicators()
         
-        # 3. 獲取情緒特徵 (這代表了 AI B 看到的「當前輿論氛圍」)
-        sentiment_vec = self.sentiment_cache.get(event_key, self.sentiment_cache["None"])
+        # 3. 獲取情緒特徵
+        # 這裡直接從傳入的 event_data 拿預計算好的向量
+        sentiment_vec = event_data["sentiment"]
 
         obs = np.concatenate([
             [cash_ratio, shares_ratio, price_change, unrealized_pnl, rsi, macd, sma5],
@@ -170,15 +210,19 @@ class MarketEnv(gym.Env):
         self.prev_price = initial_price
         self.prev_total_assets = self.initial_cash
         
-        _, event_key = self._get_current_event()
-        return self._get_observation(event_key), {}
+        # 重置時，先決定 "Day 0" 是否有事件發生
+        self.current_event_data = self._generate_daily_event()
+        # 回傳 Observation 讓 Agent 看到當前(Day 0)的狀態
+        return self._get_observation(self.current_event_data), {}
 
     def step(self, action):
         self.total_steps_counter += 1
         transaction_cost = 0.001 if self.total_steps_counter > self.curriculum_threshold else 0.0
         
         current_base_price = self._get_base_price()
-        event_type, event_key = self._get_current_event()
+        
+        # 取出當前事件類型，Bots 根據此事件進行反應
+        event_type = self.current_event_data["category"]
         
         # --- Bot 行動與留言 (模擬群眾壓力) ---
         bots_actions = [
@@ -191,6 +235,8 @@ class MarketEnv(gym.Env):
         rl_action_str = ["Buy", "Sell", "Hold"][action]
         all_acts = bots_actions + [rl_action_str]
         net_demand = all_acts.count("Buy") - all_acts.count("Sell")
+        
+        # 市場價格衝擊
         final_price = current_base_price * (1 + self.market_impact_k * net_demand)
         
         # 交易執行
@@ -212,23 +258,42 @@ class MarketEnv(gym.Env):
 
         self.total_assets = self.current_cash + (self.current_shares * final_price)
         
-        # Reward: Alpha
+        # Reward: Alpha (超額報酬)
         agent_ret = (self.total_assets - self.prev_total_assets) / self.prev_total_assets
         mkt_ret = (final_price - self.prev_price) / self.prev_price
         reward = (agent_ret - mkt_ret) * 100.0 + penalty
         
+        # 更新狀態
         self.prev_price, self.prev_total_assets = final_price, self.total_assets
         self.current_day += 1
         
-        done = (self.total_assets <= self.initial_cash * 0.1) or (self.current_day >= self.sim_days)
-        _, next_event_key = self._get_current_event()
+        # --- 隨機生成 "明天" 的事件 ---
+        # 這將作為下一個 Step 的 Observation，也是下一個 Step Bots 會反應的依據
+        self.next_event_data = self._generate_daily_event()
         
-        return self._get_observation(next_event_key), reward, done, False, {"day": self.current_day, "assets": self.total_assets}
+        done = (self.total_assets <= self.initial_cash * 0.1) or (self.current_day >= self.sim_days)
+        
+        # 取得下一個 Observation
+        obs = self._get_observation(self.next_event_data)
+        
+        # 更新事件指針：明天的事件變成 "當前" 事件，供下一次 step 的 bot 使用
+        self.current_event_data = self.next_event_data
+        
+        return obs, reward, done, False, {"day": self.current_day, "assets": self.total_assets, "event": event_type}
 
 if __name__ == "__main__":
-    env = MarketEnv(sim_days=100)
-    obs, _ = env.reset()
-    print(f"初始觀察值 (10維):\n{np.round(obs, 3)}")
-    # 測試一步
-    obs, rew, done, _, info = env.step(env.action_space.sample())
-    print(f"Step 後的情緒維度 (最後三位): {obs[-3:]}")
+    # 確保目錄下有 sp500.csv 和 rich_events.json
+    try:
+        env = MarketEnv(sim_days=100)
+        obs, _ = env.reset()
+        print(f"初始事件: {env.current_event_data['category']}")
+        print(f"初始觀察值 (前7位技術+後3位情緒):\n{np.round(obs, 3)}")
+        
+        # 測試一步
+        obs, rew, done, _, info = env.step(env.action_space.sample())
+        print(f"Step 1 事件: {info['event']}") 
+        print(f"Step 1 後的情緒維度 (下一個事件預測): {obs[-3:]}")
+    except FileNotFoundError as e:
+        print(f"錯誤: 找不到檔案 - {e}")
+    except Exception as e:
+        print(f"發生錯誤: {e}")
