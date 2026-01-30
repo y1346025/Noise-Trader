@@ -51,7 +51,7 @@ def get_gambler_action(event_type):
 # --- 2. 核心環境：MarketEnv ---
 
 class MarketEnv(gym.Env):
-    def __init__(self, k_line_path='sp500.csv', events_path='rich_events.json', sim_days=100):
+    def __init__(self, k_line_path='sp500.csv', events_path='rich_events.json', sim_days=200):
         super(MarketEnv, self).__init__()
 
         # 數據載入
@@ -252,15 +252,15 @@ class MarketEnv(gym.Env):
             if self.current_shares < 0.01: penalty -= 1.0
             else:
                 sell_vol = self.current_shares * 0.5
-                if (final_price - self.avg_buy_price) / self.avg_buy_price > 0.01: penalty += 0.5
+                if (final_price - self.avg_buy_price) / self.avg_buy_price > 0.1: penalty += 0.5 # 如果 (當前價格 - 平均成本) / 平均成本 > 1% (有賺超過 1%)，改成10%
                 self.current_cash += (sell_vol * final_price) * (1 - transaction_cost)
                 self.current_shares -= sell_vol
 
         self.total_assets = self.current_cash + (self.current_shares * final_price)
         
         # Reward: Alpha (超額報酬)
-        agent_ret = (self.total_assets - self.prev_total_assets) / self.prev_total_assets
-        mkt_ret = (final_price - self.prev_price) / self.prev_price
+        agent_ret = (self.total_assets - self.prev_total_assets) / self.prev_total_assets # Agent Return (AI 的報酬率)
+        mkt_ret = (final_price - self.prev_price) / self.prev_price # Market Return (大盤/股價本身的漲跌幅)
         reward = (agent_ret - mkt_ret) * 100.0 + penalty
         
         # 更新狀態
@@ -284,7 +284,7 @@ class MarketEnv(gym.Env):
 if __name__ == "__main__":
     # 確保目錄下有 sp500.csv 和 rich_events.json
     try:
-        env = MarketEnv(sim_days=100)
+        env = MarketEnv(sim_days=200)
         obs, _ = env.reset()
         print(f"初始事件: {env.current_event_data['category']}")
         print(f"初始觀察值 (前7位技術+後3位情緒):\n{np.round(obs, 3)}")

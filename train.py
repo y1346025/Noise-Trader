@@ -28,7 +28,7 @@ def main():
 
     # 建立環境：確保讀取新的 rich_events.json
     # 注意：這裡用 Lambda 函數包裝，是為了配合 DummyVecEnv
-    env_maker = lambda: Monitor(MarketEnv(sim_days=100, events_path='rich_events.json'), log_dir)
+    env_maker = lambda: Monitor(MarketEnv(sim_days=200, events_path='rich_events.json'), log_dir)
     
     # [關鍵修正] 向量化環境 + 正規化
     # 1. DummyVecEnv: 讓 SB3 可以處理環境

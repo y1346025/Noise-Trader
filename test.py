@@ -11,7 +11,7 @@ from market_env import MarketEnv
 
 # --- 1. 設定路徑與參數 ---
 # [請修改] 這裡要換成你剛剛訓練出來的資料夾名稱
-timestamp_dir = "models/PPO-1769506790"  # 範例，請替換成你的實際路徑
+timestamp_dir = "models/PPO-1769597396" 
 model_path = f"{timestamp_dir}/final_model.zip"
 stats_path = f"{timestamp_dir}/final_model_env.pkl"
 
@@ -23,10 +23,10 @@ print(f"--- 載入模型與正規化參數: {timestamp_dir} ---")
 
 # --- 2. 重建環境與載入參數 ---
 # 必須建立一個結構一模一樣的環境
-env = DummyVecEnv([lambda: MarketEnv(sim_days=100, events_path='rich_events.json')])
+# [注意] 這裡將 sim_days 改回 100 以配合圖表標題，若需 200 請自行修改
+env = DummyVecEnv([lambda: MarketEnv(sim_days=200, events_path='rich_events.json')])
 
 # [關鍵] 載入訓練時的統計數據 (Mean/Std)
-# 如果這一步沒做，AI 看到的 RSI=0.5 可能會被誤判成極大或極小值
 env = VecNormalize.load(stats_path, env)
 
 # 測試時不要更新統計數據 (Training=False)，也不用正規化 Reward
@@ -34,7 +34,6 @@ env.training = False
 env.norm_reward = False
 
 # 強制開啟手續費 (透過訪問內層環境)
-# env.envs[0] 是 DummyVecEnv 裡的第一個環境實體
 env.envs[0].total_steps_counter = 30001 
 print(f"★ 測試模式啟動：模擬天數 100 天，已強制開啟手續費機制")
 
@@ -45,103 +44,113 @@ obs = env.reset()
 done = False
 history = {
     "day": [], "price": [], "assets": [], "action": [], "event": [],
-    "raw_sentiment": [] # 紀錄原始情緒 (Pos, Neg)
+    "raw_sentiment": [] 
 }
 
 print("開始推論...")
 
-# 因為 VecEnv 會自動 Reset，我們需要手動控制結束條件
 while True:
     action, _ = model.predict(obs, deterministic=True)
     
-    # --- 獲取真實數據用於繪圖 ---
-    # 透過 env.envs[0] 取得最底層的 MarketEnv 實體
     real_env = env.envs[0]
     
     current_day = real_env.current_day
     current_assets = real_env.total_assets
     current_price = real_env._get_base_price()
-    
-    # 取得當前事件資料 (注意：MarketEnv 邏輯是 Bot 根據 current 反應，AI 預測 next)
-    # 這裡我們記錄 "當下正在發生" 的事件
     current_event = real_env.current_event_data
     
-    # 記錄數據
     history["day"].append(current_day)
     history["price"].append(current_price)
     history["assets"].append(current_assets)
-    history["action"].append(["Buy", "Sell", "Hold"][action[0]]) # action 是 array
+    history["action"].append(["Buy", "Sell", "Hold"][action[0]]) 
     history["event"].append(current_event["category"])
-    history["raw_sentiment"].append(current_event["sentiment"]) # [Pos, Neg, Neu]
+    history["raw_sentiment"].append(current_event["sentiment"]) 
 
-    # Step
     obs, reward, done, infos = env.step(action)
     
-    # 檢查是否結束 (VecEnv 的 done 是 array)
     if done[0]:
         break
 
-# --- 4. 視覺化 (針對隨機事件優化) ---
-fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(15, 12), sharex=True)
+# --- 4. 視覺化 (高度優化版) ---
+from matplotlib.lines import Line2D # [新增] 用於自定義圖例
 
-# Graph 1: 資產曲線
+fig, (ax1, ax2, ax3) = plt.subplots(3, 1, figsize=(15, 14), sharex=True)
+
+# === Graph 1: 資產曲線 ===
 ax1.plot(history["day"], history["assets"], color="#1f77b4", lw=2, label="AI Portfolio")
 ax1.axhline(y=10000, color='red', ls='--', alpha=0.5, label="Initial Cash")
-ax1.set_title("100-Day Backtest: Asset Growth (with 0.1% Fee)")
-ax1.legend()
+ax1.set_title("200-Day Backtest: Asset Growth (0.1% Fee Included)")
 ax1.grid(True, alpha=0.3)
+ax1.legend(loc="upper left")
 
-# Graph 2: 價格與關鍵事件
-ax2.plot(history["day"], history["price"], color="gray", alpha=0.6, label="Price")
+# === Graph 2: 價格、交易與詳細事件 ===
+# 2.1 畫股價
+ax2.plot(history["day"], history["price"], color="silver", lw=1.5, label="Stock Price", zorder=1)
 
-# 篩選並標記 "有發生事件" 的日子 (過濾掉 None)
-event_days = []
-event_prices = []
-event_colors = []
-event_markers = []
+# 2.2 準備事件資料容器
+event_handles = {} # 用來存圖例的樣式
 
 for d, e, p in zip(history["day"], history["event"], history["price"]):
     if e == "None": continue
     
-    event_days.append(d)
-    event_prices.append(p)
+    # --- 事件樣式定義邏輯 ---
+    # 形狀: o=Good, x=Bad/Panic, s=Neutral
+    # 顏色: Green/Red=Real, Orange=Fake/Rumor, Gray=Neutral
     
-    if "Panic" in e or "Bad" in e:
-        event_colors.append("red") # 壞消息
-        event_markers.append("x")
-    elif "Good" in e:
-        event_colors.append("green") # 好消息
-        event_markers.append("o")
-    else:
-        event_colors.append("orange")
-        event_markers.append("s")
+    marker = 's'
+    color = 'gray'
+    label = e
+    size = 80
+    
+    if "Real_Good" in e:
+        marker, color, label = 'o', 'blue', 'Real Good (Official)'
+    elif "Fake_Good" in e:
+        marker, color, label = 'o', 'mediumpurple', 'Fake Good (Hype)'
+    elif "Real_Bad" in e:
+        marker, color, label = 'x', 'red', 'Real Bad (Crash)'
+    elif "Fake_Panic" in e:
+        marker, color, label = 'x', 'orange', 'Fake Panic (Rumor)'
+    elif "Neutral" in e:
+        marker, color, label = 's', 'gray', 'Neutral / Noise'
 
-# 繪製事件點
-for i in range(len(event_days)):
-    ax2.scatter(event_days[i], event_prices[i], c=event_colors[i], marker=event_markers[i], s=80, zorder=5)
+    # 繪製事件點
+    ax2.scatter(d, p, c=color, marker=marker, s=size, zorder=3, alpha=0.9)
+    
+    # 收集圖例 (避免重複)
+    if label not in event_handles:
+        event_handles[label] = Line2D([0], [0], color='w', markerfacecolor=color, 
+                                      marker=marker, markeredgecolor=color, 
+                                      markersize=10, label=label)
 
-# 標記 AI 的買賣點
+# 2.3 繪製 AI 買賣點 (配色修改：Buy=Blue, Sell=Black)
 buy_days = [d for d, a in zip(history["day"], history["action"]) if a == "Buy"]
 buy_px = [history["price"][history["day"].index(d)] for d in buy_days]
 sell_days = [d for d, a in zip(history["day"], history["action"]) if a == "Sell"]
 sell_px = [history["price"][history["day"].index(d)] for d in sell_days]
 
-ax2.scatter(buy_days, buy_px, color="blue", marker="^", s=100, label="AI Buy")
-ax2.scatter(sell_days, sell_px, color="black", marker="v", s=100, label="AI Sell")
+ax2.scatter(buy_days, buy_px, color="red", marker="^", s=120, zorder=5, label="Buy")
+ax2.scatter(sell_days, sell_px, color="forestgreen", marker="v", s=120, zorder=5, label="Sell")
 
-ax2.set_title("Price Action, Events & AI Trades (Green=Good News, Red=Bad News)")
-ax2.legend()
+# 2.4 製作精美的自定義圖例
+# 合併交易圖例與事件圖例
+custom_lines = [
+    Line2D([0], [0], color='w', marker='^', markerfacecolor='red', markersize=10, label='Buy'),
+    Line2D([0], [0], color='w', marker='v', markerfacecolor='forestgreen', markersize=10, label='Sell'),
+] + list(event_handles.values())
+
+ax2.set_title("Market Events & Trading Actions")
+ax2.legend(handles=custom_lines, loc='upper left', ncol=2, fontsize=10)
 ax2.grid(True, alpha=0.3)
 
-# Graph 3: 情緒流 (只畫 Pos/Neg，忽略 Neu)
-# 轉換數據格式
+# === Graph 3: 情緒流 (FinBERT) ===
 pos_vals = [s[0] for s in history["raw_sentiment"]]
 neg_vals = [s[1] for s in history["raw_sentiment"]]
 
-ax3.bar(history["day"], pos_vals, color='green', alpha=0.5, label='Positive Sentiment')
-ax3.bar(history["day"], [-v for v in neg_vals], color='red', alpha=0.5, label='Negative Sentiment')
-ax3.axhline(0, color='black', lw=1)
-ax3.set_title("Daily Market Sentiment (FinBERT)")
+ax3.bar(history["day"], pos_vals, color='forestgreen', alpha=0.6, label='Positive Sentiment')
+ax3.bar(history["day"], [-v for v in neg_vals], color='firebrick', alpha=0.6, label='Negative Sentiment')
+ax3.axhline(0, color='black', lw=0.8)
+ax3.set_title("Daily Sentiment Analysis (FinBERT Output)")
+ax3.set_ylabel("Sentiment Score")
 ax3.set_ylim(-1.0, 1.0)
 ax3.legend(loc='upper right')
 

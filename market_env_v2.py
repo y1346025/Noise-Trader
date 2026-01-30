@@ -115,7 +115,7 @@ def get_gambler_action(event_type):
 # --- 2. 核心環境：MarketEnv ---
 
 class MarketEnv(gym.Env):
-    def __init__(self, k_line_path='sp500.csv', events_path='rich.events.json', sim_days=100):
+    def __init__(self, k_line_path='sp500.csv', events_path='rich.events.json', sim_days=200):
         super(MarketEnv, self).__init__()
 
         # 初始化 AI A (並讓它去載入 rich.events.json)
