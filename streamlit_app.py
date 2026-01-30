@@ -7,9 +7,18 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 import os
 import glob
+import datetime
 
-# 引入你的環境
 from market_env import MarketEnv
+
+# --- 初始化歷史紀錄 ---
+if 'history_list' not in st.session_state:
+    st.session_state.history_list = []
+
+# --- 側邊欄：清除歷史紀錄按鈕 ---
+if st.sidebar.button("清除所有歷史紀錄"):
+    st.session_state.history_list = []
+    st.rerun()
 
 # --- 0. 自動偵測模型邏輯 ---
 def get_model_folders():
@@ -159,8 +168,40 @@ if st.sidebar.button("開始執行回測") and selected_model_dir:
             # --- C. 原始數據表格 ---
             with st.expander("🔍 點擊展開：查看詳細交易日誌"):
                 st.dataframe(pd.DataFrame(history), use_container_width=True)
+            
+            # --- 存檔到 Session State ---
+            record = {
+                "timestamp": datetime.datetime.now().strftime("%H:%M:%S"),
+                "model": selected_model_dir,
+                "days": sim_days,
+                "fee": "Enabled" if fee_enabled else "Disabled",
+                "return": total_return,
+                "fig": fig, # 直接存下整張 Matplotlib 圖表
+                "df": pd.DataFrame(history)
+            }
+            # 插入到最前面，讓最新的紀錄顯示在最上面
+            st.session_state.history_list.insert(0, record)
 
 elif not selected_model_dir:
     st.warning("請先確認專案目錄下是否有 models/ 資料夾以及訓練好的模型。")
 else:
     st.info("💡 設定好左側參數後，點擊「開始執行回測」按鈕。")
+
+    # --- 顯示歷史紀錄區 ---
+st.divider()
+st.header("📜 歷史回測紀錄")
+
+if not st.session_state.history_list:
+    st.write("尚無歷史紀錄")
+else:
+    for i, res in enumerate(st.session_state.history_list):
+        with st.expander(f"🕒 {res['timestamp']} | 報酬率: {res['return']:.2f}% | 模型: {res['model']}"):
+            st.write(f"**參數：** 模擬 {res['days']} 天 | 手續費: {res['fee']}")
+            st.pyplot(res['fig']) # 重新顯示圖表
+            st.download_button(
+                label="下載此數據 (CSV)",
+                data=res['df'].to_csv(index=False),
+                file_name=f"backtest_{res['timestamp']}.csv",
+                mime='text/csv',
+                key=f"btn_{i}"
+            )
